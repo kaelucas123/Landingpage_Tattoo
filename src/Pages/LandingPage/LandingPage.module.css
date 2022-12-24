@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+}
 #container {
     width: 100vw;
     height: 100vh;
@@ -12,7 +17,8 @@
     background-image: url(../../Images/Landingpage/noise.png);
     background-size: cover;
     opacity: 0.4;
-
+    position: absolute;
+    z-index: 0;
 
 }
 @keyframes bgAnimation{
