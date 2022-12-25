@@ -1,0 +1,133 @@
+*{
+    clip: auto;
+}
+@font-face {
+    font-family: chomsky;
+    src: url(../../fontes/Chomsky.otf);
+}
+
+#container{
+    height: 60rem;
+    background-image: url('../../Images/Sobre_mim/bgLines.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  -300px ;
+    display: flex;
+}
+#containerImagem{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    /* background-color: rgb(34, 32, 29); */
+}
+#containerImagem img{
+    top: 10rem;
+    width: 40rem;
+    margin: 20px 0rem;
+    height: fit-content;
+}
+
+#containerText{
+    width: 50vw;
+    height: auto;
+    grid-area: texto;
+    /* background-color: rgb(184, 184, 184); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+    margin-bottom: 2rem;
+}
+
+#text{
+    width: 70%;
+    height: auto;
+    display: flex;
+    
+    top: 10rem;
+    /* align-items: center; */
+    flex-direction: column;
+}
+#text div h1{
+    font-family: chomsky;
+    font-weight: 500;
+    font-size: 6vw;
+}
+#text div{
+    color: white;
+}
+#text div p::first-letter{
+    font-family: chomsky;
+    font-weight: lighter;
+    font-size: 5rem;
+}
+#text div p{
+    font-size: 2rem;
+}
+.hr1{
+    width: 50%;
+    margin: 7px 0px;
+    height: 8px;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+.hr2{
+    border-radius: 50px;
+    width: 70%;
+    margin: 7px 0px;
+    height: 8px;
+    background-color: aliceblue;
+    float: left;
+}
+.end{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.ponto{
+    width: 15px;
+    height: 15px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+}
+
+@media (max-width: 1276px) {
+    #container{
+        height: auto;
+        background-image: url(../../Images/Sobre_mim/bgLines.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:  -300px ;
+        display: flex;
+        flex-direction: column;
+    }
+    #text div h1{
+        font-family: chomsky;
+        font-weight: 500;
+        font-size: 15vw;
+    }
+    #containerImagem{
+        width: 100vw;
+    }
+    #containerImagem img{
+        width: 80vw;
+    }
+    #containerTexto{
+        width: 100vw;
+    }
+    #containerText{
+        width: 100vw;
+        height: auto;
+        grid-area: texto;
+        /* background-color: rgb(184, 184, 184); */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* background-color: aquamarine; */
+    }
+}

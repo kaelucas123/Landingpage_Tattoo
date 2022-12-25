@@ -5,22 +5,30 @@
 }
 #container {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background: linear-gradient(45deg, #1a1b1d, #0e0f0f);
     background-size: 300%;
     animation: bgAnimation 5s infinite alternate;
 }
-#bgImage{
-    width: 100%;
-    height: 100%;
-    /* background-color: aliceblue; */
-    background-image: url(../../Images/Landingpage/noise.png);
-    background-size: cover;
-    opacity: 0.4;
-    position: absolute;
-    z-index: 0;
-
+.divisor{
+    width: 95vw;
+    height: 3px;
+    background-color: aliceblue;
+    margin: auto;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+#bgImage{
+    width: 100vw;
+    height: auto;
+    background-image: url(../../Images/Landingpage/noise.png);
+    background-image: cover;
+    background-size: cover;
+    /* position: absolute; */
+    z-index: 0;
+}
+
 @keyframes bgAnimation{
     0%{
         background-position: 0%;

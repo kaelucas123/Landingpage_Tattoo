@@ -4,9 +4,12 @@
     padding: 0;
     z-index: 1;
 }
-.container{
+
+.container {
     width: 100vw;
+    min-height: 10rem;
     height: auto;
+    position: relative;
     /* background-color: aliceblue; */
     background-image: url(../../Images/Hero/Michael.jpg);
     background-repeat: no-repeat;
@@ -14,180 +17,100 @@
     background-position: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10rem 47rem;
+    grid-template-rows: 10rem 40rem;
     grid-template-areas: "menuSection menuSection menuSection menuSection menuSection"
-    "hero hero hero hero hero";
+        "hero hero hero hero hero";
+
 }
-.menuSection{
+
+.menuSection {
     /* background-color: rgb(35, 35, 36); */
     display: flex;
     justify-content: space-between;
     /* display: none; */
     grid-area: menuSection;
 }
-#hero{
+
+#hero {
     grid-area: hero;
-    height: 45rem;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
+    margin-bottom: 1rem;
 }
-.seta{
+
+
+.seta {
     background-color: #1A1A1A;
+    grid-area: seta;
     border-radius: 50px;
     border: solid white 4px;
-    position: absolute ;
+    position: absolute;
+    margin-top: 90%;
     width: 46px;
     height: 100px;
     bottom: 0;
     display: flex;
     justify-content: center;
 }
-.ball{
+
+.ball {
     background-color: aliceblue;
     border-radius: 50%;
     width: 1.5rem;
     height: 1.5rem;
     animation: pulse 1.5s alternate-reverse infinite;
 }
-@keyframes pulse{
-    from{
+
+@keyframes pulse {
+    from {
         transform: translateY(20%);
     }
-    to{
+
+    to {
         transform: translateY(250%);
     }
 }
-#michael{
+
+#michael {
     margin-right: 2rem;
-    position: absolute;
+    height: 100%;
+    width: 33vw;
     right: 1rem;
-    
+    grid-area: michael;
+
+    margin: 5rem 0rem;
+
+
 
 }
-.logo{
-    width: 10rem;
-    margin: 1rem;
+
+#michael svg {
+    position: absolute;
+    height: 100%;
+    right: 4rem;
+}
+
+.logo {
+    width: 8rem;
+    margin: 2rem;
     position: absolute;
     z-index: 4;
-    
-}
-#menuBurger{
-    display: none;
-    
-}
-nav {
-    /* width: 100vw; */
-    height: 5em;
-    /* background-color: antiquewhite; */
-    display: flex;
-    justify-content: flex-end;
-    padding: 1em;
-}
-.navLinks{
-    /* background-color: aliceblue; */
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
-}
-.navLinks ul{
-    display: flex;
-    align-self: center;
-    list-style: none; 
-}
-.navLinks ul li{
-    padding: 5rem;
 
-}
-.navLinks ul li a{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 1.4em;
-}
-/* ------------------------------------------------------------------------------------------------ */
-.burger-menu {
-    margin: 3em 5rem;
-    height: 100%;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-}
-.burger-bar{
-    width: 4em;
-    height: 0.5em;
-    background-color: white;
-    border-radius: 0.5em;
-}
-.menu{
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 57rem;
-    background-color: #161616a4;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-}
-
-.menu ul{
-    list-style: none;
-    text-decoration: none;
-    /* background-color: azure; */
-    width: 20rem;
-    height: auto;
-    text-align: center;
-}
-.menu ul li{
-    font-size: 2rem;
-    padding: 2rem;
-}
-.menu ul li:hover{
-    background-color: #171717;
-
-}
-.menu ul li a{
-    color: white;
-}
-/* ------------------------- slide menu ------------------------ */
-.hidden{
-    display: none;
-}
-.visible{
-    display: flex;
-}
-/* ---------------------------- animations ---------------------------- */
-/* clicked */
-.burger-bar.clicked:nth-child(1){
-    transform: rotate(45deg) translate(0.75em, 1.25em);
-    transition: ease-in-out 0.2s;
-}
-.burger-bar.clicked:nth-child(2){
-    transform: scale(0.1);
-    transition: ease-in-out 0.2s;
-}
-.burger-bar.clicked:nth-child(3){
-    transform: rotate(135deg) translate(-0.5em, 1em);
-    transition: ease-in-out 0.2s;
-}
-/* unclicked  */
-.burger-bar.unclicked{
-    transform: rotate(0) translate(0);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s;
 }
 
 
 @media (max-width: 900px) {
-    .seta{
+    .container {
+        grid-template-rows: 20rem;
+        
+    }
+    .seta {
         display: none;
     }
-    .navLinks{
-        display: none;
-    }
-    #menuBurger{
-        display: inherit;
+    #michael svg{
+        right: 1rem;
     }
 }
