@@ -7,11 +7,11 @@ function MenuBurguer() {
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
     const [menu_class, setMenuClass] = useState("menu hidden")
     const [isMenuClicked, setIsMenuClicked] = useState(false);
-
     const updateMenu = () => {
         if (!isMenuClicked) {
             setBurgerClass("burger-bar clicked")
             setMenuClass("menu visible")
+            window.scrollTo(0,0)
         }
         else {
             setBurgerClass('burger-bar unclicked')
@@ -45,11 +45,11 @@ function MenuBurguer() {
                         </div>
                     </nav>
                     <div className={menu_class}>
-                        <ul>
-                            <li><a href="">Sobre mim</a></li>
-                            <li><a href="">Galeria</a></li>
-                            <li><a href="">Localização</a></li>
-                        </ul>
+                            <ul className='menuClicado'>
+                                <li><a href="">Sobre mim</a></li>
+                                <li><a href="">Galeria</a></li>
+                                <li><a href="">Localização</a></li>
+                            </ul>
                     </div>
                 </div>
                 {/* ------------------------------------------------------------------- */}
