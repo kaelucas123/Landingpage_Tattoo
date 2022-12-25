@@ -5,6 +5,7 @@ import styles from '../LandingPage/LandingPage.module.css'
 import Hero from '../../Components/Hero/Hero'
 import Sobre_Mim from '../../Components/Sobre_Mim/Sobre_Mim'
 import MenuBurguer from '../../Components/MenuBurguer/MenuBurguer'
+import Galeria from '../../Components/Galeria/Galeria'
 
 function LandingPage() {
   return (
@@ -17,6 +18,7 @@ function LandingPage() {
         <div className={styles.divisor}></div>
         <Sobre_Mim></Sobre_Mim>
         <div className={styles.divisor}></div>
+        <Galeria></Galeria>
 
       </section>
     </div>

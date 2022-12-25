@@ -1,0 +1,36 @@
+.slider{
+    width: 100vw;
+    height: 100%;
+    /* background-color: azure; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.image{
+    width: 30vw;
+    height: fit-content;
+    border-radius: 20px;
+    /* border: 20px solid seagreen; */
+}
+.right-arrow{
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: black;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+}
+.left-arrow{
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: black;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+
+}
