@@ -1,11 +1,41 @@
+
 export const SliderData = [
     {
-        image: 'https://images.pexels.com/photos/14211152/pexels-photo-14211152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        image:  'slideImages/i1.png'
     },
     {
-        image: 'https://images.pexels.com/photos/14686151/pexels-photo-14686151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        image:  'slideImages/i2.png'
     },
     {
-        image: 'https://images.pexels.com/photos/7679463/pexels-photo-7679463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        image:  'slideImages/i3.png'
+    },
+    {
+        image:  'slideImages/i4.png'
+    },
+    {
+        image:  'slideImages/i5.png'
+    },
+    {
+        image:  'slideImages/i6.png'
+    },
+    {
+        image:  'slideImages/i7.png'
+    },
+    {
+        image:  'slideImages/i8.png'
+    },
+    {
+        image:  'slideImages/i9.png'
+    },
+    {
+        image:  'slideImages/i10.png'
+    },
+    {
+        image:  'slideImages/i11.png'
+    },
+    {
+        image:  'slideImages/i12.png'
     }
+
+    
 ]

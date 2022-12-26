@@ -1,5 +1,9 @@
 .chho{
     width: 100vw;
-    height: 60rem;
+    height: auto;
     position: relative;
+    /* transition: all 50s; */
+    display: flex;
+    align-items: center;
+
 }

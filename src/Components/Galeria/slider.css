@@ -1,20 +1,22 @@
 .slider{
     width: 100vw;
     height: 100%;
-    /* background-color: azure; */
+    /* background-color: aliceblue; */
     display: flex;
-    align-items: center;
     justify-content: center;
-    
+    align-items: center;
 }
 .image{
-    width: 30vw;
-    height: fit-content;
-    border-radius: 20px;
-    /* border: 20px solid seagreen; */
+    width: 40vw;
+    /* background-color: aquamarine; */
+    margin: 4rem;   
+    
+   
 }
 .right-arrow{
     position: absolute;
+    background-color: aliceblue;
+    border-radius: 50%;
     top: 50%;
     right: 32px;
     font-size: 3rem;
@@ -24,6 +26,8 @@
     user-select: none;
 }
 .left-arrow{
+    background-color: aliceblue;
+    border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 32px;
@@ -33,4 +37,13 @@
     cursor: pointer;
     user-select: none;
 
+}
+.slide{
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+.slide.active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
 }
